@@ -1,6 +1,6 @@
 import UIKit
 
-class ReceiversView: UIView {
+class OverLapChatHeadView: UIView {
     
     private var borderWidth: Float?
     private var borderColor: UIColor?

@@ -2,13 +2,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var receiverView: ReceiversView?
+    var receiverView: OverLapChatHeadView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let people = generatePeople(4)
-        self.receiverView = ReceiversView(frame: CGRect(x: 10, y: 20, width: 200, height: 100),
+        self.receiverView = OverLapChatHeadView(frame: CGRect(x: 10, y: 20, width: 200, height: 100),
                                           person: people,
                                           borderWidth: 12,
                                           borderColor: UIColor.whiteColor())

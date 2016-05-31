@@ -17,7 +17,7 @@
 		F3A579ED1CFC16AA005A021B /* HChatHeadsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A579EC1CFC16AA005A021B /* HChatHeadsUITests.swift */; };
 		F3A57A051CFD7273005A021B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A57A041CFD7273005A021B /* Person.swift */; };
 		F3A57A091CFD727D005A021B /* BorderedRoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A57A061CFD727D005A021B /* BorderedRoundView.swift */; };
-		F3A57A0A1CFD727D005A021B /* ReceiversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A57A071CFD727D005A021B /* ReceiversView.swift */; };
+		F3A57A0A1CFD727D005A021B /* OverLapChatHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A57A071CFD727D005A021B /* OverLapChatHeadView.swift */; };
 		F3A57A0B1CFD727D005A021B /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A57A081CFD727D005A021B /* RoundImageView.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +55,7 @@
 		F3A579EE1CFC16AA005A021B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3A57A041CFD7273005A021B /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = Models/Person.swift; sourceTree = "<group>"; };
 		F3A57A061CFD727D005A021B /* BorderedRoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BorderedRoundView.swift; path = Views/BorderedRoundView.swift; sourceTree = "<group>"; };
-		F3A57A071CFD727D005A021B /* ReceiversView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceiversView.swift; path = Views/ReceiversView.swift; sourceTree = "<group>"; };
+		F3A57A071CFD727D005A021B /* OverLapChatHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OverLapChatHeadView.swift; path = Views/OverLapChatHeadView.swift; sourceTree = "<group>"; };
 		F3A57A081CFD727D005A021B /* RoundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundImageView.swift; path = Views/RoundImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,7 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				F3A57A061CFD727D005A021B /* BorderedRoundView.swift */,
-				F3A57A071CFD727D005A021B /* ReceiversView.swift */,
+				F3A57A071CFD727D005A021B /* OverLapChatHeadView.swift */,
 				F3A57A081CFD727D005A021B /* RoundImageView.swift */,
 			);
 			name = Views;
@@ -293,7 +293,7 @@
 				F3A57A051CFD7273005A021B /* Person.swift in Sources */,
 				F3A57A0B1CFD727D005A021B /* RoundImageView.swift in Sources */,
 				F3A579CA1CFC16AA005A021B /* AppDelegate.swift in Sources */,
-				F3A57A0A1CFD727D005A021B /* ReceiversView.swift in Sources */,
+				F3A57A0A1CFD727D005A021B /* OverLapChatHeadView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +518,7 @@
 				F3A579F31CFC16AA005A021B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F3A579F41CFC16AA005A021B /* Build configuration list for PBXNativeTarget "HChatHeadsTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +527,7 @@
 				F3A579F61CFC16AA005A021B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F3A579F71CFC16AA005A021B /* Build configuration list for PBXNativeTarget "HChatHeadsUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +536,7 @@
 				F3A579F91CFC16AA005A021B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
