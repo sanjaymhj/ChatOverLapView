@@ -2,14 +2,15 @@ import UIKit
 
 class ReceiversView: UIView {
     
-    private var imageView = [UIImageView]()
     private var borderWidth: Float?
     private var borderColor: UIColor?
     
     convenience init(frame: CGRect, person people: [Person], borderWidth: Float, borderColor: UIColor) {
         self.init(frame: frame)
+        
         self.borderColor = borderColor
         self.borderWidth = borderWidth
+        
         self.commonInit(people)
     }
     
@@ -17,10 +18,14 @@ class ReceiversView: UIView {
         let minFrameSize = min(self.frame.width, self.frame.height)
         var i = 0
         for person in people {
-            guard i <= 2 else {
+            guard i <= 2 else {// add comment
                 return
             }
-            let frame = CGRect(x: (minFrameSize * CGFloat(i)) / 2, y: 0, width: self.frame.width, height: self.frame.height)
+            
+            let frame = CGRect(x: (minFrameSize * CGFloat(i)) / 2,
+                               y: 0,
+                               width: self.frame.width,
+                               height: self.frame.height)
             let roundImage = BorderedRoundView(frame: frame, image: person.image, borderWidth: self.borderWidth!, borderColor: self.borderColor!)
             self.addSubview(roundImage)
             i += 1

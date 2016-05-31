@@ -13,45 +13,45 @@ class BorderedRoundView: UIView {
         self.borderWidth = CGFloat(borderWidth)
         self.borderColor = borderColor.CGColor
         self.backgroundColor = borderColor
-
         initImageView(image)
     }
 
-    func initImageView(image: UIImage) {
-        self.imageView = RoundImageView(frame: CGRect.zero)
-        self.imageView?.backgroundColor = UIColor.clearColor()
+    private func initImageView(image: UIImage) {
+        self.imageView = RoundImageView(frame: CGRectZero)
         self.imageView!.image = image
+        self.imageView?.backgroundColor = UIColor.clearColor()
         self.imageView!.clipsToBounds = true
         self.imageView!.contentMode = .ScaleAspectFill
         self.addSubview(self.imageView!)
     }
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        changeToSquareShape()
-        createRoundBorder()
-         let imageViewFrame = CGRect(x: CGRectGetMinX(self.bounds) + CGFloat(self.borderWidth!), y: CGRectGetMinY(self.bounds) + CGFloat(self.borderWidth!), width: self.frame.width - 2 * CGFloat(self.borderWidth!), height: self.frame.height - 2 * CGFloat(self.borderWidth!))
-        self.imageView?.frame = imageViewFrame
-    }
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
-        changeToSquareShape()
-        createRoundBorder()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        changeToSquareShape()
-        createRoundBorder()
     }
     
-    func changeToSquareShape() {
+    //MARK:-
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        changeToSquareShape()
+        createRoundBorder()
+        let imageViewFrame = CGRect(x: CGRectGetMinX(self.bounds) + CGFloat(self.borderWidth!),
+                                    y: CGRectGetMinY(self.bounds) + CGFloat(self.borderWidth!),
+                                    width: self.frame.width - 2 * CGFloat(self.borderWidth!),
+                                    height: self.frame.height - 2 * CGFloat(self.borderWidth!))
+        self.imageView?.frame = imageViewFrame
+    }
+    
+    //MARK:-
+    private func changeToSquareShape() {
         self.frame = squareShape(fromFrame: self.frame)
     }
     
-    func squareShape(fromFrame rect: CGRect) -> CGRect {
+    private func squareShape(fromFrame rect: CGRect) -> CGRect {
         let minDimension = min(rect.size.height, rect.size.width)
         var newRect = rect
         newRect.size.width = minDimension
@@ -59,8 +59,7 @@ class BorderedRoundView: UIView {
         return newRect
     }
     
-    func createRoundBorder() {
-        self.clipsToBounds = true
+    private func createRoundBorder() {
         self.layer.cornerRadius = self.frame.width / 2
     }
 }

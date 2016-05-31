@@ -1,21 +1,17 @@
-//
-//  ViewController.swift
-//  HChatHeads
-//
-//  Created by Sanjay Maharjan on 5/30/16.
-//  Copyright © 2016 Sanjay Maharjan. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
     
     var receiverView: ReceiversView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let people = generatePeople(4)
-        self.receiverView = ReceiversView(frame: CGRect(x: 10, y: 20, width: 200, height: 100), person: people, borderWidth: 12, borderColor: UIColor.whiteColor())
+        self.receiverView = ReceiversView(frame: CGRect(x: 10, y: 20, width: 200, height: 100),
+                                          person: people,
+                                          borderWidth: 12,
+                                          borderColor: UIColor.whiteColor())
         self.view.addSubview(receiverView!)
     }
     
@@ -44,11 +40,4 @@ class ViewController: UIViewController {
         return resultPeople
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
-
