@@ -1,27 +1,10 @@
 
 import UIKit
 
-protocol RoundImageDelegate {
-}
-
 class RoundImageView: UIImageView {
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        changeToSquareShape()
-        createRoundBorder()
-    }
-    var delegate: RoundImageDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
-        changeToSquareShape()
-        createRoundBorder()
-    }
-    
-    convenience init(type buttonType: UIButtonType) {
-        self.init(frame: CGRect.zero)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -30,8 +13,10 @@ class RoundImageView: UIImageView {
         createRoundBorder()
     }
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        changeToSquareShape()
+        createRoundBorder()
     }
     
     func changeToSquareShape() {

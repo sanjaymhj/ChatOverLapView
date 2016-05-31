@@ -9,26 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     
     var receiverView: ReceiversView?
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        
         let people = generatePeople(4)
         self.receiverView = ReceiversView(frame: CGRect(x: 10, y: 20, width: 200, height: 100), person: people, borderWidth: 12, borderColor: UIColor.whiteColor())
         self.view.addSubview(receiverView!)
-
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
     }
     
     func generatePeople(number: Int) -> [Person] {

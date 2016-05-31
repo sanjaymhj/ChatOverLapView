@@ -1,8 +1,5 @@
 import UIKit
 
-protocol BorderedRoundViewDelegate {
-}
-
 class BorderedRoundView: UIView {
     
     private var imageView: RoundImageView?
@@ -18,13 +15,10 @@ class BorderedRoundView: UIView {
         self.backgroundColor = borderColor
 
         initImageView(image)
-        changeToSquareShape()
-        createRoundBorder()
     }
 
     func initImageView(image: UIImage) {
-        let imageViewFrame = CGRect(x: CGRectGetMinX(self.bounds) + CGFloat(self.borderWidth!), y: CGRectGetMinY(self.bounds) + CGFloat(self.borderWidth!), width: self.frame.width - 2 * CGFloat(self.borderWidth!), height: self.frame.height - 2 * CGFloat(self.borderWidth!))
-        self.imageView = RoundImageView(frame: imageViewFrame)
+        self.imageView = RoundImageView(frame: CGRect.zero)
         self.imageView?.backgroundColor = UIColor.clearColor()
         self.imageView!.image = image
         self.imageView!.clipsToBounds = true
@@ -36,9 +30,9 @@ class BorderedRoundView: UIView {
         super.layoutSubviews()
         changeToSquareShape()
         createRoundBorder()
+         let imageViewFrame = CGRect(x: CGRectGetMinX(self.bounds) + CGFloat(self.borderWidth!), y: CGRectGetMinY(self.bounds) + CGFloat(self.borderWidth!), width: self.frame.width - 2 * CGFloat(self.borderWidth!), height: self.frame.height - 2 * CGFloat(self.borderWidth!))
+        self.imageView?.frame = imageViewFrame
     }
-    
-    var delegate: BorderedRoundViewDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -51,10 +45,6 @@ class BorderedRoundView: UIView {
         super.init(coder: aDecoder)
         changeToSquareShape()
         createRoundBorder()
-    }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
     }
     
     func changeToSquareShape() {

@@ -1,6 +1,7 @@
 import UIKit
 
 class ReceiversView: UIView {
+    
     private var imageView = [UIImageView]()
     private var borderWidth: Float?
     private var borderColor: UIColor?
@@ -16,7 +17,7 @@ class ReceiversView: UIView {
         let minFrameSize = min(self.frame.width, self.frame.height)
         var i = 0
         for person in people {
-            if i > 2 {
+            guard i <= 2 else {
                 return
             }
             let frame = CGRect(x: (minFrameSize * CGFloat(i)) / 2, y: 0, width: self.frame.width, height: self.frame.height)
@@ -33,4 +34,5 @@ class ReceiversView: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+    
 }
