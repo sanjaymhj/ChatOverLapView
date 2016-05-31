@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         
         let person1 = Person(name: "The Hope Once", image: UIImage(named: "b")!)
         let person2 = Person(name: "Neutral Machine", image: UIImage(named: "c")!)
-        let person3 = Person(name: "Bored to death", image: UIImage(named: "a")!)//treated as this is the current user
+        let person3 = Person(name: "Bored to death", image: UIImage(named: "a")!)
         let person4 = Person(name: "The Dumb One", image: UIImage(named: "a")!)
         let person5 = Person(name: "The Glad Shit", image: UIImage(named: "a")!)
         let person6 = Person(name: "Make Last", image: UIImage(named: "c")!)

@@ -18,7 +18,7 @@ class ReceiversView: UIView {
         let minFrameSize = min(self.frame.width, self.frame.height)
         var i = 0
         for person in people {
-            guard i <= 2 else {// add comment
+            guard i <= 2 else {// to populate only first 3 person in the view 
                 return
             }
             

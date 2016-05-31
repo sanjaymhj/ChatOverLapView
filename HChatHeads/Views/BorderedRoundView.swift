@@ -33,7 +33,6 @@ class BorderedRoundView: UIView {
         super.init(coder: aDecoder)
     }
     
-    //MARK:-
     override func layoutSubviews() {
         super.layoutSubviews()
         
@@ -46,7 +45,7 @@ class BorderedRoundView: UIView {
         self.imageView?.frame = imageViewFrame
     }
     
-    //MARK:-
+    //MARK:- Change to Square and Round
     private func changeToSquareShape() {
         self.frame = squareShape(fromFrame: self.frame)
     }
