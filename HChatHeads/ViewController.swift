@@ -8,7 +8,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let people = generatePeople(4)
-        self.receiverView = OverLapChatHeadView(frame: CGRect(x: 20, y: 40, width: 200, height: 100),
+        self.receiverView = OverLapChatHeadView(frame: CGRect(x: 20, y: 40, width: 300, height: 150),
                                           person: people,
                                           borderWidth: 12,
                                           borderColor: UIColor.whiteColor())
@@ -18,20 +18,15 @@ class ViewController: UIViewController {
     func generatePeople(number: Int) -> [Person] {
         var people: [Person] = []
         
-        let person1 = Person(name: "The Hope Once", image: UIImage(named: "b")!)
+        let person1 = Person(name: "The Hope Once", image: UIImage(named: "a")!)
         let person2 = Person(name: "Neutral Machine", image: UIImage(named: "c")!)
-        let person3 = Person(name: "Bored to death", image: UIImage(named: "a")!)
-        let person4 = Person(name: "The Dumb One", image: UIImage(named: "a")!)
-        let person5 = Person(name: "The Glad First", image: UIImage(named: "a")!)
-        let person6 = Person(name: "Make Last", image: UIImage(named: "c")!)
+        let person3 = Person(name: "Bored to death", image: UIImage(named: "d")!)
+        let person4 = Person(name: "The Dumb One", image: UIImage(named: "b")!)
         
         people.append(person1)
         people.append(person2)
         people.append(person3)
         people.append(person4)
-        people.append(person5)
-        people.append(person6)
-        
         
         var resultPeople: [Person] = []
         for index in 0..<number {
