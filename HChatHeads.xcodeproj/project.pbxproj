@@ -11,7 +11,6 @@
 		F3A579CC1CFC16AA005A021B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A579CB1CFC16AA005A021B /* ViewController.swift */; };
 		F3A579CF1CFC16AA005A021B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3A579CD1CFC16AA005A021B /* Main.storyboard */; };
 		F3A579D21CFC16AA005A021B /* HChatHeads.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3A579D01CFC16AA005A021B /* HChatHeads.xcdatamodeld */; };
-		F3A579D41CFC16AA005A021B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3A579D31CFC16AA005A021B /* Assets.xcassets */; };
 		F3A579D71CFC16AA005A021B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3A579D51CFC16AA005A021B /* LaunchScreen.storyboard */; };
 		F3A579E21CFC16AA005A021B /* HChatHeadsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A579E11CFC16AA005A021B /* HChatHeadsTests.swift */; };
 		F3A579ED1CFC16AA005A021B /* HChatHeadsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A579EC1CFC16AA005A021B /* HChatHeadsUITests.swift */; };
@@ -19,6 +18,7 @@
 		F3A57A091CFD727D005A021B /* BorderedRoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A57A061CFD727D005A021B /* BorderedRoundView.swift */; };
 		F3A57A0A1CFD727D005A021B /* OverLapChatHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A57A071CFD727D005A021B /* OverLapChatHeadView.swift */; };
 		F3A57A0B1CFD727D005A021B /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A57A081CFD727D005A021B /* RoundImageView.swift */; };
+		F3A57A601CFDF4FB005A021B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3A57A5F1CFDF4FB005A021B /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,6 @@
 		F3A579CB1CFC16AA005A021B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F3A579CE1CFC16AA005A021B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3A579D11CFC16AA005A021B /* HChatHeads.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HChatHeads.xcdatamodel; sourceTree = "<group>"; };
-		F3A579D31CFC16AA005A021B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3A579D61CFC16AA005A021B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3A579D81CFC16AA005A021B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3A579DD1CFC16AA005A021B /* HChatHeadsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HChatHeadsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +56,7 @@
 		F3A57A061CFD727D005A021B /* BorderedRoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BorderedRoundView.swift; path = Views/BorderedRoundView.swift; sourceTree = "<group>"; };
 		F3A57A071CFD727D005A021B /* OverLapChatHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OverLapChatHeadView.swift; path = Views/OverLapChatHeadView.swift; sourceTree = "<group>"; };
 		F3A57A081CFD727D005A021B /* RoundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundImageView.swift; path = Views/RoundImageView.swift; sourceTree = "<group>"; };
+		F3A57A5F1CFDF4FB005A021B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,12 +107,12 @@
 		F3A579C81CFC16AA005A021B /* HChatHeads */ = {
 			isa = PBXGroup;
 			children = (
+				F3A57A5F1CFDF4FB005A021B /* Assets.xcassets */,
 				F3A57A031CFD722E005A021B /* Models */,
 				F3A57A021CFD7227005A021B /* Views */,
 				F3A579C91CFC16AA005A021B /* AppDelegate.swift */,
 				F3A579CB1CFC16AA005A021B /* ViewController.swift */,
 				F3A579CD1CFC16AA005A021B /* Main.storyboard */,
-				F3A579D31CFC16AA005A021B /* Assets.xcassets */,
 				F3A579D51CFC16AA005A021B /* LaunchScreen.storyboard */,
 				F3A579D81CFC16AA005A021B /* Info.plist */,
 				F3A579D01CFC16AA005A021B /* HChatHeads.xcdatamodeld */,
@@ -261,7 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3A579D71CFC16AA005A021B /* LaunchScreen.storyboard in Resources */,
-				F3A579D41CFC16AA005A021B /* Assets.xcassets in Resources */,
+				F3A57A601CFDF4FB005A021B /* Assets.xcassets in Resources */,
 				F3A579CF1CFC16AA005A021B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
